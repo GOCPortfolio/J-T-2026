@@ -5,7 +5,7 @@
 const CONFIG = {
   // Your live web address, ending with a slash. Used in the WhatsApp share message.
   // (The link-preview tags in index.html have their own address: see README.)
-  siteUrl: "https://github.com/GOCPortfolio/JT2026.git/",
+  siteUrl: "https://gocportfolio.github.io/J-T-2026/",
 
   couple: {
     bride: {
