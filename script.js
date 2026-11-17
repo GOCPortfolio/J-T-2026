@@ -12,7 +12,7 @@ const CONFIG = {
       title: "Dr",
       given: "Jane Chekwube",
       surname: "Ezema",
-      known: "Jane",
+      known: "Chekwube",
       parents: "Daughter of Late Chief Josephat Uroko Ezema & Late Mrs Felicia Obochi Ezema"
     },
     groom: {
@@ -22,7 +22,7 @@ const CONFIG = {
       known: "Nnamdi",
       parents: "Son of Late Chief Ogbuefi Patrick U. Alumona & Late Chief (Mrs) Maria Nwabuaku Alumona"
     },
-    shortNames: "Jane & Nnamdi",
+    shortNames: "Chekwube & Nnamdi",
     seal: "J & T",
     hashtag: "Dr J & Dr. T, 2026",
     tagline: "Two hearts, one journey"
@@ -125,7 +125,11 @@ const CONFIG = {
     { q: "Dress code", a: "It will be much appreciated if our guests honour the colour codes of the day.", swatches: true },
     { q: "Parking", a: "There is enough secured parking space." },
     { q: "Accommodation", a: "Guests coming from outside Enugu State should make arrangements early enough for comfortable accommodation." },
-    { q: "Contact person", a: "Please contact the following numbers for any further enquiry:", phones: ["08033521362", "08038343324"] }
+    { q: "Contact person", a: "Please contact the following numbers for any further enquiry:", phones: ["08033521362", "08038343324"] },
+    { q: "Who created this beautiful wedding website?",
+      a: "This website was proudly designed by G.O.C | Brand Strategist \u00d7 AI, where we create beautiful, personalized digital wedding experiences.",
+      extra: "Planning your wedding? Let's create yours too!",
+      link: { text: "Chat with us on WhatsApp", href: "https://wa.me/2348027134537" } }
   ],
 
   // Only rows with both a role and a name are shown. Add or remove freely.
@@ -139,13 +143,13 @@ const CONFIG = {
   },
 
   share: {
-    message: "You are invited to celebrate the union of Jane & Nnamdi (Dr J & Dr. T, 2026) on 23rd December 2026."
+    message: "You are invited to celebrate the union of Chekwube & Nnamdi (Dr J & Dr. T, 2026) on 23rd December 2026."
   },
 
   music: { src: "assets/music.mp3", volume: 0.5 },   // replace the file with your own licensed MP3
 
   calendar: {
-    title: "Traditional Marriage of Jane & Nnamdi",
+    title: "Traditional Marriage of Chekwube & Nnamdi",
     fileName: "jane-nnamdi-wedding.ics"
   }
 };
@@ -246,6 +250,8 @@ const CONFIG = {
     h.appendChild(btn);
     var panel = el('div', 'faq-a'); panel.id = 'faq-a' + i; panel.setAttribute('role', 'region'); panel.setAttribute('aria-labelledby', btn.id);
     var wrap = el('div'), inner = el('div', 'in'); inner.appendChild(el('p', '', f.a));
+    if (f.extra) { var ex = el('p', '', f.extra); ex.style.marginTop = '8px'; inner.appendChild(ex); }
+    if (f.link) { var lp = el('p'); lp.style.marginTop = '8px'; var la = el('a', '', f.link.text); la.href = f.link.href; la.target = '_blank'; la.rel = 'noopener'; lp.appendChild(la); inner.appendChild(lp); }
     if (f.swatches) { var ul = el('ul', 'faq-sw'); CONFIG.colours.forEach(function (c) { var li = el('li'), d = el('span', 'sw' + (c.metallic ? ' metal' : '')); d.style.background = c.hex; li.appendChild(d); li.appendChild(el('span', '', c.name)); ul.appendChild(li); }); inner.appendChild(ul); }
     if (f.phones) {
       var pp = el('p'); pp.style.marginTop = '8px';

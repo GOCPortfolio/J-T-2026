@@ -1,5 +1,5 @@
 /* =========================================================
-   Wedding invitation: Jane & Nnamdi
+   Wedding invitation: Chekwube & Nnamdi
    Colours live here as variables. Change them to restyle.
    ========================================================= */
 :root{
@@ -117,8 +117,8 @@ ul,ol{padding:0;list-style:none}
 .hero{position:relative;background:var(--burg-d);color:#fbf1de;overflow:hidden}
 .hero-photo{position:relative}
 .hero-photo img{display:block;width:100%;aspect-ratio:860/932;object-fit:cover;object-position:50% 20%}
-.hero-photo::after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:linear-gradient(to top,var(--burg-d) 4%,rgba(61,15,28,.75) 40%,transparent)}
-.hero-body{position:relative;z-index:2;margin-top:-150px;padding:0 20px 64px;text-align:center}
+.hero-photo::after{content:"";position:absolute;inset:auto 0 0 0;height:16%;background:linear-gradient(to top,var(--burg-d) 0%,rgba(61,15,28,.55) 45%,transparent)}
+.hero-body{position:relative;z-index:2;margin-top:-26px;padding:0 20px 64px;text-align:center}
 .hero-tag{font-family:var(--f-head);font-size:15px;letter-spacing:.26em;text-transform:uppercase;display:inline-block}
 .hero-sub{font-style:italic;font-size:22px;color:#e8d9bd;margin-top:4px}
 .hero-names{font-family:var(--f-script);font-weight:400;font-size:clamp(64px,19vw,98px);line-height:1;margin:10px 0 6px;display:flex;flex-direction:column;align-items:center}
@@ -153,7 +153,7 @@ ul,ol{padding:0;list-style:none}
 .person{margin-top:22px}
 .p-title{font-family:var(--f-head);font-size:15px;letter-spacing:.3em;color:var(--burg);text-transform:uppercase}
 .p-given{font-family:var(--f-head);font-size:21px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-top:2px}
-.p-sur{font-family:var(--f-script);font-size:clamp(54px,16vw,72px);line-height:1.1;padding:.02em .15em .1em;display:inline-block}
+.p-sur{font-family:var(--f-head);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:clamp(30px,9vw,42px);line-height:1.2;padding:.1em .1em .1em .24em;display:inline-block;margin:4px 0}
 .p-par{font-style:italic;font-size:19.5px;color:var(--muted);max-width:19em;margin:2px auto 0;line-height:1.4}
 .amp-div{display:flex;align-items:center;gap:14px;justify-content:center;margin:22px auto 4px;max-width:260px}
 .amp-div i{flex:1;height:1px;background:linear-gradient(90deg,transparent,#b8935a)}
@@ -326,7 +326,7 @@ ul,ol{padding:0;list-style:none}
   .hero{display:grid;grid-template-columns:1fr 1fr;min-height:min(100vh,860px);align-items:stretch}
   .hero-photo{height:100%;min-height:640px}
   .hero-photo img{position:absolute;inset:0;width:100%;height:100%;aspect-ratio:auto;object-position:50% 25%}
-  .hero-photo::after{inset:0 0 0 auto;width:34%;height:100%;background:linear-gradient(to right,transparent,var(--burg-d))}
+  .hero-photo::after{inset:0 0 0 auto;width:14%;height:100%;background:linear-gradient(to right,transparent,var(--burg-d))}
   .hero-body{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 56px}
   .hero-names{font-size:clamp(84px,8vw,128px)}
   .hero-date{font-size:22px}

@@ -1,4 +1,4 @@
-# Jane & Nnamdi: Wedding Invitation Website
+# Chekwube & Nnamdi: Wedding Invitation Website
 
 ## 1. What is in this folder
 - `index.html` the page structure and the link-preview tags
