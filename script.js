@@ -135,7 +135,10 @@ const CONFIG = {
   // Only rows with both a role and a name are shown. Add or remove freely.
   vendors: [
     { role: "Rentals", name: "Odogwu Ezema Ventures" },
-    { role: "Female Designer", name: "Latino" }
+    { role: "Female Designer", name: "Latino Apparel" },
+    { role: "Caterer", name: "Etomchukwu Mobile catering Services"},
+    { role: "Makeup", name: "Jasmine makeover"},
+    { role: "Website IV", name: "G.O.C | BrandStrategist"}
   ],
 
   footer: {
