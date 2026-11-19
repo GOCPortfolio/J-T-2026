@@ -138,6 +138,10 @@ const CONFIG = {
     { role: "Female Designer", name: "Latino Apparel" },
     { role: "Caterer", name: "Etomchukwu Mobile catering Services"},
     { role: "Makeup", name: "Jasmine makeover"},
+    { role: "Decoration", name: "Ugoson events"},
+    { role: "Videography and photography", name: "De-Destiny Photography"},
+    { role: "Music", name: "DJ smart the hype-man, Ikorodo Orba, G-Love Dance Band"},
+    { role: "Security", name: "NPF, FRSC, NA, De rock-base security limited, Ogbagu neighborhood watch"},
     { role: "Website IV", name: "G.O.C | BrandStrategist"}
   ],
 
